@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -48,10 +49,172 @@ button:focus {
     outline: none;
     box-shadow: none;
 }
+*::selection{
+    background-color: #fe9602;
+    color: #fff;
+}
 /************************** Header css **************************/
-
+.header-main{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    transition: 0.5s;
+}
+.header-main.scroll{
+    background-color: #005845;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+.header-main .navbar{
+    padding: 12px 0;
+}
+.header-main .custom-nav-item .custom-nav-link{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 8px;
+}
+.header-main .custom-nav-item .custom-nav-link.active{
+    color: #FEC001;
+}
+.header-main .lets-talk{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 15px 42px;
+    background: linear-gradient(135deg, rgba(254,192,1,1) 0%, rgba(255,114,3,1) 50%, rgba(254,192,1,1) 100%);
+    background-size: 200%;
+    background-position: left;
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.header-main .lets-talk::before{
+    content: '';
+    position: absolute;
+    height: 68px;
+    width: 58px;
+    background-color: #FF3F00;
+    transform: rotate(40deg);
+    transition: 0.5s;
+    right: -34px;
+    top: 22px;
+}
+.header-main .lets-talk:hover{
+    background-position: right;
+}
+.header-main .lets-talk:hover:before{
+    background-color: #fe9602;
+}
 /************************** Header css end **************************/
-
+.banner-section-home{
+    position: relative;
+}
+.banner-section-home .banner-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 5rem 0 0;
+}
+.banner-section-home .banner-content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    line-height: 66px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+    margin-top: 5rem;
+}
+.banner-section-home .banner-content h2 span{
+    font-weight: 700;
+    color: #FEC001;
+}
+.banner-section-home .banner-content p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #B3D3CA;
+    width: 80%;
+}
+.banner-section-home .banner-content .banner-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.banner-section-home .banner-content .banner-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 52px;
+    width: 160px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+.banner-section-home .banner-content .banner-btn a span{
+    padding-left: 5px;
+}
+.banner-section-home .banner-content .banner-btn .contact-btn{
+    position: relative;
+    background: linear-gradient(320deg, rgba(254,185,1,1) 0%, rgba(255,127,3,1) 50%, rgba(254,185,1,1) 100%);
+    background-size: 200%;
+    background-position: left;
+    overflow: hidden;
+}
+.banner-section-home .banner-content .banner-btn .hire-btn{
+    background: linear-gradient(320deg, rgba(253,140,0,1) 0%, rgba(254,73,0,1) 50%, rgba(253,140,0,1) 100%);
+    background-size: 200%;
+    background-position: left;
+}
+.banner-section-home .banner-content .banner-btn .contact-btn::before{
+    content: '';
+    position: absolute;
+    height: 68px;
+    width: 58px;
+    background-color: #FF3F00;
+    transform: rotate(40deg);
+    transition: 0.5s;
+    right: -34px;
+    top: 22px;
+}
+.banner-section-home .banner-content .banner-btn .contact-btn:hover:before{
+    background-color: #fe9602;
+}
+.banner-section-home .banner-content .banner-btn a:hover{
+    background-position: right;
+}
+.banner-section-home .banner-content .brands-slider-banner{
+    width: 80%;
+    margin: -20px  auto 0;
+    padding-left: 40px;
+}
+.banner-section-home .banner-content .brands-slider-banner img{
+    height: 44px;
+    object-fit: contain;
+}
+.banner-section-home .banner-content .brands-slider-banner .owl-item{
+    transition: 0.2s;
+}
+/*
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
 /************************** media-query **************************/
 
 @media only screen and (min-width: 1921px) and (max-width: 7368px) {}
