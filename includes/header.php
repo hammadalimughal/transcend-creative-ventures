@@ -28,7 +28,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12 px-lg-4">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="logo"></a>
+                        <a class="navbar-brand" href="index.php"><img class="img-fluid" src="images/logo.png" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
