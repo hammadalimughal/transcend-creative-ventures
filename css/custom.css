@@ -14,6 +14,9 @@ body {
 main{
     overflow: hidden;
 }
+section{
+    position: relative;
+}
 a {
     text-decoration: none;
 }
@@ -991,6 +994,59 @@ button:focus {
 .footer-main .footer-copyright .copyright-content .footer-linking li a.active{
     color: #FEC001;
 }
+
+.banner-sec-inner{
+    position: relative;
+    height: 49vw;
+    margin-bottom: -180px;
+    z-index: 0;
+}
+.banner-sec-inner::after{
+    content: '';
+    position: absolute;
+    right: -70px;
+    bottom: -140px;
+    background-image: url(../images/circle.png);
+    background-size: contain;
+    height: 170px;
+    width: 170px;
+    /* animation: jello 2s ease-in-out 0.3s infinite */
+}
+.banner-sec-inner .inner-banner-bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}
+.banner-sec-inner .inner-banner-svg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.banner-sec-inner .inner-banner-content{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-sec-inner .inner-banner-content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 66px;
+    color: #FEC001;
+    margin-bottom: 80px;
+}
+.banner-sec-inner .inner-banner-content .banner-featured{
+    padding-right: 100px;
+}
+.banner-sec-inner .inner-banner-content .banner-featured img{
+    max-width: 425px;
+}
 .packages-inner-tabs .title-packages{
     text-align: center;
     padding: 100px 0 50px;
@@ -1057,7 +1113,7 @@ button:focus {
 .packages-inner-tabs .packages-content .card {
     position: relative;
     padding: 45px 20px 40px 20px;
-    width: 370px;
+    width: 100%;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 15px rgb(0 0 0 / 10%);
@@ -1322,16 +1378,98 @@ button:focus {
     margin: 80px 0;
 }
 .about-us-featured figure{
-    width: 100%;
+    position: relative;
+    left: -80px;
+    width: calc(100% + 80px);
     height: 100%;
 }
-.about-us-featured figure img{
+.about-us-featured .about-us-content{
+    padding-left: 20px;
+}
+.about-us-featured .about-us-content h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #00B354;
+}
+.about-us-featured .about-us-content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    color: #333333;
+}
+.about-us-featured .about-us-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #404040;
+    line-height: 35px;
+    margin-top: 30px;
+}
+.specific-purpose .specific-purpose-content{
+    padding: 60px 70px 50px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(196,213,135,0.2) 0%, rgba(0,148,141,0.2) 100%);
+}
+.specific-purpose .specific-purpose-content h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+.specific-purpose .specific-purpose-content ul li{
+    position: relative;
+    padding-left: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: #212121;
+    margin-top: 35px;
+}
+.specific-purpose .specific-purpose-content ul li::before{
+    content: '\f101';
     position: absolute;
+    font-family: "Font Awesome 6 Pro";
+    font-size: 10px;
+    color: #01684A;
+    font-weight: 700;
     left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
-    object-fit: contain;
+}
+.about-featured-cards{
+    margin: 70px 0 0;
+}
+.about-featured-cards .about-item:nth-child(even) .about-card{
+    background: linear-gradient(210deg, rgba(0,75,63,1) 0%, rgba(0,135,92,1) 50%, rgba(0,185,90,1) 100%);
+}
+.about-featured-cards .about-item:nth-child(odd) .about-card{
+    background: linear-gradient(320deg, rgba(254,192,1,1) 0%, rgba(253,72,0,1) 100%);
+}
+.about-featured-cards .about-item .about-card{
+    padding: 50px 30px 35px;
+    text-align: center;
+    border-radius: 35px;
+    color: #fff;
+}
+.about-featured-cards .about-item .about-card figure{
+    margin-bottom: 30px;
+}
+.about-featured-cards .about-item .about-card h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.about-featured-cards .about-item .about-card h4 span{
+    font-weight: 700;
+    display: block;
+}
+.about-featured-cards .about-item .about-card p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
 }
 /*
     font-family: 'Barlow', sans-serif;

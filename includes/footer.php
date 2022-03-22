@@ -1,3 +1,26 @@
+
+    <section class="lovely-partners">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-11 col-12 px-lg-4">
+                <h2>See Our <span>Lovely Partners</span></h2>
+                <p>Placeholder Is Simply Dummy Text Of The Printing And Typesetting Industry Placeholder.</p>
+                <ul id="lvly-prtnr-slider" class="lovely-partners-slider owl-carousel owl-theme">
+                    <li class="item"><img src="images/lovely-partners-1.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-2.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-3.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-4.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-5.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-1.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-2.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-3.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-4.png" alt="lovely partners" class="img-fluid"></li>
+                    <li class="item"><img src="images/lovely-partners-5.png" alt="lovely partners" class="img-fluid"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
 <footer class="footer-main">
     <div class="container">
         <div class="row justify-content-center">

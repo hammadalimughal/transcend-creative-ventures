@@ -1,6 +1,15 @@
 // AOS.init({
 //     once: true
 // });
+$(document).ready(function () {
+    var url = window.location.pathname;
+    var filename = url.substring(url.lastIndexOf('/') + 1);
+    if (filename == "") {
+        filename = "index.php"
+    }
+    $(".custom-nav-item .custom-nav-link").removeClass("active");
+    $(`.custom-nav-item .custom-nav-link[href="${filename}"]`).addClass("active")
+})
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 

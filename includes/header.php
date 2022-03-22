@@ -37,7 +37,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item custom-nav-item">
-                                    <a class="nav-link custom-nav-link active" aria-current="page" href="index.php">Home</a>
+                                    <a class="nav-link custom-nav-link" href="index.php">Home</a>
                                 </li>
                                 <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="about.php">about</a></li>
                                 <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="services.php">services</a></li>

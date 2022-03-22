@@ -3,10 +3,14 @@ include 'includes/header.php';
 $page = 'home';
 ?>
 <main>
-    <section class="banner-section-home">
-        <figure class="banner-bg">
-            <img class="img-fluid" src="images/banner-bg-main.png" alt="">
-        </figure>
+<section class="banner-section-home">
+        <!--<figure>-->
+        <!--    <img class="img-fluid" src="images/banner-bg-main.png" alt="">-->
+        <!--</figure>-->
+        <div class="gradient-overlay"></div>
+        <video autoplay="" muted="" loop="">
+					  <source src="images/bg-video.mp4">
+				  </video>
         <div class="banner-content">
             <div class="container">
                 <div class="row justify-content-center">
@@ -26,7 +30,7 @@ $page = 'home';
                                 </div>
                             </div>
                             <div class="col-xxl-7 col-xl-7 col-lg-6 col-md-6 col-sm-12 col-12 pe-xl-0 ps-xl-5">
-                                <figure class="banner-home-featured">
+                                <figure>
                                     <img class="img-fluid" src="images/banner-right.png" alt="">
                                 </figure>
                                 <ul class="owl-carousel owl-theme brands-slider-banner" id="banner-brands">
@@ -49,7 +53,7 @@ $page = 'home';
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12 px-lg-4">
-                    <div class="row justify-content-between flex-lg-row flex-column-reverse">
+                    <div class="row justify-content-between">
                         <div class="col-xxl-7 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 position-relative">
                             <div class="form-bg"></div>
                             <div class="form-special-discount">
@@ -79,7 +83,7 @@ $page = 'home';
                                 </form>
                             </div>
                         </div>
-                        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-lg-0">
+                        <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 px-0">
                             <div class="sec-info">
                                 <h2>We Are A <strong>Professional Digital Company</strong> <span>Helping
                                         Start-Ups.</span></h2>
@@ -254,7 +258,7 @@ $page = 'home';
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12 px-lg-4">
                     <div class="business-startup-content">
-                        <div class="row flex-lg-row flex-column-reverse">
+                        <div class="row">
                             <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 position-relative">
                                 <div class="business-startup-images">
                                     <div class="business-startup-slider owl-carousel owl-theme"
@@ -285,13 +289,13 @@ $page = 'home';
     </section>
     <section class="packages-sec">
         <div class="row justify-content-end">
-            <div class="col-xl-11 col-12 ps-lg-4 pe-lg-3 px-4">
+            <div class="col-xl-11 col-12 ps-lg-4">
                 <div class="heading-content">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
                             <h2>See All <strong>Awesome </strong><span>Packages </span><strong>Categories</strong></h2>
                         </div>
-                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 ps-lg-0">
+                        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12 ps-0">
                             <p>Various Kinds Of Digital Art Categories That Are Trending The Trend Will Be Reset Every
                                 Week.</p>
                         </div>
@@ -969,28 +973,6 @@ $page = 'home';
                 </div>
             </div>
         </div>
-    </section>
-    <section class="lovely-partners">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-11 col-12 px-lg-4">
-                <h2>See Our <span>Lovely Partners</span></h2>
-                <p>Placeholder Is Simply Dummy Text Of The Printing And Typesetting Industry Placeholder.</p>
-                <ul id="lvly-prtnr-slider" class="lovely-partners-slider owl-carousel owl-theme">
-                    <li class="item"><img src="images/lovely-partners-1.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-2.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-3.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-4.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-5.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-1.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-2.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-3.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-4.png" alt="lovely partners" class="img-fluid"></li>
-                    <li class="item"><img src="images/lovely-partners-5.png" alt="lovely partners" class="img-fluid"></li>
-                </ul>
-            </div>
-        </div>
-    </div>
     </section>
 </main>
 <?php

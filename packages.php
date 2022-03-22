@@ -3,11 +3,21 @@ include 'includes/header.php';
 $page = 'home';
 ?>
 <main>
-    <section class="banner-sec-inner">
+<section class="banner-sec-inner">
+        <figure class="inner-banner-bg"><img class="img-fluid" src="images/banner-inner-sec.png" alt="banner"></figure>
+        <svg class="inner-banner-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1441.435 472.185">
+            <path id="Path_37157" data-name="Path 37157"
+                d="M-2129.242,296.1s170.735,356.166,708.478,214.262,731.658,257.207,731.658,257.207H-2129.242Z"
+                transform="translate(2129.742 -295.881)" fill="#f7f9f2" stroke="none" stroke-width="1" />
+        </svg>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-11 col-12 px-lg-4">
-
+                    <div class="inner-banner-content">
+                        <h2>packages</h2>
+                        <figure class="banner-featured"><img src="images/inner-banner-people.png" alt="banner-content">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
