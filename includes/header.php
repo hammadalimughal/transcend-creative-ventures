@@ -39,10 +39,10 @@
                                 <li class="nav-item custom-nav-item">
                                     <a class="nav-link custom-nav-link active" aria-current="page" href="index.php">Home</a>
                                 </li>
-                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="javascript:;">about</a></li>
-                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="javascript:;">services</a></li>
-                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="javascript:;">portfolio</a></li>
-                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="javascript:;">packages</a></li>
+                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="about.php">about</a></li>
+                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="services.php">services</a></li>
+                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="portfolio.php">portfolio</a></li>
+                                <li class="nav-item custom-nav-item"><a class="nav-link custom-nav-link" href="packages.php">packages</a></li>
                             </ul>
                             <a href="javascript:;" class="lets-talk">Let's Talk</a>
                         </div>
